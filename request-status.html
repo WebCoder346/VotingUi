@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Voting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .resultBox {
+      height: 5rem;
+      width: 25rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #333336;
+      color: white;
+    }
+    .resultBox p{
+      margin: 0 0 0 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="formCon">
+    <p>Check Request Status</p>
+    <form>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Request Id</label>
+        <div class="col-sm-10">
+          <input type="text" required="true" placeholder="Request Id" class="form-control requestId" id="inputEmail3">
+        </div>
+      </div>
+      <button class="btn">Check</button>
+    </form>
+    <div class="resultBox">
+      <p>Status: Approved</p>
+    </div>
+  </div>
+</body>
+
+</html>

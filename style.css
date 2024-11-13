@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Itim&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: black;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+}
+
+.body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+}
+
+.left {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.left .textBox {
+  width: 80%;
+}
+
+.left .textBox h1 {
+  width: 100%;
+  font-family: "Itim", cursive;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.left .textBox p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.right {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: right;
+}
+
+.right .cardCon {
+
+
+  height: 100vh;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: right;
+  border: none;
+  overflow: hidden;
+}
+
+.cardCon .cardCon1 {
+
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  transform: rotate(25deg);
+}
+
+.cardCon .cardCon2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 30%;
+  transform: rotate(25deg);
+}
+
+.cardCon .card {
+  height: 20rem;
+  width: 16rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.cardCon .card .top {
+  display: flex;
+  align-items: center;
+
+}
+
+.cardCon .card img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 0.5rem;
+}
+
+.cardCon .card .top .para {
+  font-size: 1.3rem;
+
+
+  font-family: "Archivo", sans-serif;
+  font-weight: 700;
+
+}
+
+.right .cardCon .card p {
+  margin-top: 1rem;
+  color: black;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: none;
+  line-height: 1.3rem;
+}
+
+.btnBox {
+  margin-top: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+  border: none;
+  outline: none;
+  background: white;
+  text-decoration: none;
+  color: #000;
+  margin-right: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn:active {
+  padding: 0.2rem 1.2rem 0.5rem 1.2rem;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btnFull {
+  width: 98%;
+  display: block;
+  margin: 0 auto;
+  background: #3F6AFF;
+  color: white;
+  margin: 1rem;
+}
+
+.formCon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 40rem;
+  overflow: scroll;
+}
+
+.formCon p {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+form {
+  min-width: 50rem;
+  display: block;
+  margin: 0 auto;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form .btn {
+  float: right;
+}
+
+label {
+  margin-left: 0.5rem;
+}
+
+input {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  color: black;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.2rem;
+}
+
+.inpBox {
+  border-radius: 1rem;
+  background: white;
+  display: flex;
+  align-items: center;
+}
+
+.inpBox i {
+  color: black;
+  margin-right: 1rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.bottomRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottomRow a {
+  font-size: 1rem;
+  color: #ADADB0;
+  font-family: "Archivo", sans-serif;
+  font-weight: 500;
+}

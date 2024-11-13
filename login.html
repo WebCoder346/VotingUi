@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Voting</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="formCon">
+    <p>Login</p>
+    <form>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">User Id</label>
+        <div class="col-sm-10">
+          <input type="email" required="true" placeholder="User Id" class="form-control userId" id="inputEmail3">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <div class="inpBox">
+            <input type="password" required="true" class="inp form-control password" id="inputPassword3" placeholder="Password">
+            <i class="fa-regular fa-eye-slash eye"></i>
+          </div>
+        </div>
+      </div>
+      <div class="bottomRow">
+        <button class="btn btnFull">Login</button>
+        <a href="register.html">Don't have an account? Register here</a>
+        <a href="check-status.html">Check Account Request Status</a>
+
+      </div>
+    </form>
+
+  </div>
+  <script>
+    let type = "password";
+    const eye = document.querySelector(".eye")
+    const inp = document.querySelector(".inp");
+    window.addEventListener("load", () => {
+      inp.focus();
+    })
+    eye.addEventListener("click", () => {
+      if (type == "password") {
+        eye.classList.remove("fa-eye-slash");
+        eye.classList.add("fa-eye");
+        inp.setAttribute("type", "text");
+        type = "text";
+      } else {
+        eye.classList.remove("fa-eye");
+        eye.classList.add("fa-eye-slash");
+        inp.setAttribute("type", "password");
+        type = "password";
+      }
+    })
+  </script>
+</body>
+
+</html>
